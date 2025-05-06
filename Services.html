@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pranali - developer portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/common.css">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: #0a0e20;
+            color: aliceblue;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        header {
+            background-color: #181d2b;
+            padding: 20px 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 1.1rem;
+            transition: color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            color: #8a4df9;
+        }
+
+
+        .left {
+            font-size: 1.5rem;
+        }
+
+        /* Services Section */
+        .services-section {
+            margin: 50px auto;
+            text-align: center;
+            padding: 30px;
+        }
+
+        .services-section h2 {
+            font-size: 2.5rem;
+            color: #ffffff;
+            margin-bottom: 30px;
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+
+        .service-cards-container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .service-card {
+            background-color: #1e2231;
+            color: white;
+            border-radius: 8px;
+            padding: 30px;
+            width: 250px;
+            text-align: center;
+            box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3);
+            transition: all 0.3s ease;
+        }
+
+        .service-card:hover {
+    background: linear-gradient(135deg, #6a40e5, #4e00b5); /* Gradient from purple to dark blue */
+    transform: translateY(-10px);
+    box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.5);
+}
+
+
+        .service-card h3 {
+            font-size: 1.8rem;
+            color: #fff;
+            margin-bottom: 10px;
+        }
+
+        .service-card p {
+            font-size: 1rem;
+            color: #c0c0c0;
+            margin-bottom: 15px;
+        }
+
+        .service-card .icon {
+            font-size: 3rem;
+            color: #6a40e5;
+            margin-bottom: 15px;
+        }
+
+        .service-card .details {
+            font-size: 0.95rem;
+            color: #d1d1d1;
+        }
+
+        /* Hover effect */
+        .service-card:hover .icon {
+            color: #fff;
+        }
+        .service-card {
+    background-color: #1e2231;
+    color: white;
+    border-radius: 8px;
+    padding: 30px;
+    width: 250px;
+    text-align: center;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3);
+    border: 3px solid transparent; /* Initially set border to transparent */
+    background-clip: padding-box; /* Ensures background is clipped to padding box */
+    transition: all 0.3s ease;
+}
+
+.service-card:hover {
+    background-color: transparent; /* Remove background on hover */
+    border: 5px solid transparent;
+    background: linear-gradient(135deg, #d5d836, #1f4713); /* Gradient for the border */
+    transform: translateY(-10px);
+    box-shadow: 0px 15px 25px rgba(244, 245, 248, 0.815);
+}
+h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    text-align: center;
+    background: linear-gradient(135deg, #c0cec0, #8e80a0); /* Gradient color for the text */
+    -webkit-background-clip: text; /* Clipping the background to the text */
+    color: transparent; /* Make the text color transparent so the gradient shows */
+    transition: all 0.3s ease;
+    
+}
+
+h2:hover {
+    background: linear-gradient(135deg, #d4da27, #8cce79); /* Change gradient color on hover */
+    -webkit-background-clip: text; /* Ensure gradient is clipped to text */
+    color: transparent;
+    transform: translateY(-5px); /* Slightly move the text up on hover */
+    text-shadow: 0px 5px 15px rgba(231, 216, 216, 0.87); /* Add subtle shadow on hover */
+    text-border: 3px solid transparent;
+}
+
+
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">pranali's portfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a href="/portfolio/Home.html">Home</a></li>
+                    <li><a href="/portfolio/About.html">About</a></li>
+                    <li><a href="/portfolio/Services.html">Services</a></li>
+                    <li><a href="/portfolio/Projects.html">Projects</a></li>
+                    <li><a href="/portfolio/Contact Me.html">Contact Me</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <!-- Services Section -->
+        <section class="services-section">
+            <h2>My Services</h2>
+            <div class="service-cards-container">
+                <div class="service-card">
+                    <div class="icon">💻</div>
+                    <h3>Web Development</h3>
+                    <p>Building modern, responsive websites using the latest web technologies like HTML, CSS, JavaScript, and React.</p>
+                    
+                </div>
+
+                <div class="service-card">
+                    <div class="icon">🎨</div>
+                    <h3>UI/UX Design</h3>
+                    <p>Creating intuitive user interfaces and enhancing user experience for a seamless interaction with applications.</p>
+                    
+                </div>
+
+                <div class="service-card">
+                    <div class="icon">🖼️</div>
+                    <h3>Graphic Design</h3>
+                    <p>Designing stunning visuals and branding materials, from logos to brochures and marketing materials.</p>
+                    
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <!-- Setup and start animation! -->
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Web Developer', 'Graphic Designer', 'Web Designer'],
+            typeSpeed: 50,
+        });
+    </script>
+</body>
+
+</html>

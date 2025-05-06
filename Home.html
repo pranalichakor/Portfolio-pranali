@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pranali - developer portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/common.css">
+
+
+    <style>
+   
+
+        body {
+            background-color: #0a0e20;
+            color: aliceblue;
+            font-family: 'popins', sans-serif;
+        }
+
+        header {
+            background-color: #181d2b;
+            padding: 20px 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 1.1rem;
+            transition: color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            color: #8a4df9;
+        }
+
+        .left {
+            font-size: 1.5rem;
+        }
+
+        .firstsection {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin: 50px 0;
+            font-family: sans-serif;
+            font-style: normal;
+        }
+
+        .leftsection {
+
+            font-size: 2.5rem;
+            margin: 60px 0;
+            font-style: unset;
+
+        }
+
+        .leftsection {
+            width: 430px;
+            height: 230px;
+            justify-self: center;
+            margin: 0;
+
+        }
+
+        .firstsection>div {
+            width: 30%;
+            margin: 60px 0 50px 0;
+        }
+
+        .purple {
+            color: rgba(177, 40, 226, 0.925);
+        }
+
+        .text-gray {
+            color: gray;
+        }
+
+        #element {
+            color: rgb(174, 74, 241);
+        }
+
+        .rightsection {
+            width: 530px;
+            height: 200px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            /* Add this */
+        }
+
+        .rightsection img {
+            max-height: 220%;
+            /* Ensure the image does not exceed the height of the container */
+            width: 1000px;
+            /* Maintain the aspect ratio */
+            margin-left: -30px;
+            margin-bottom: -50px;
+            /* Adjust this value to move the image to the right */
+            position: relative;
+            z-index: 2;
+        }
+
+
+        .rightsection::before {
+            content: '';
+            position: absolute;
+            top: 70%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 300px;
+            /* Adjust the size of the circle */
+            height: 450px;
+            /* Adjust the size of the circle */
+            background: radial-gradient(circle at center, rgb(62 94 137 / 80%), rgba(17, 15, 27, 0.5));
+            border-radius: 300%;
+            border: 6px solid #e1e2a5;
+
+            /* Add border to the circle */
+            z-index: 1;
+        }
+
+        .leftsection .btn {
+
+            padding: 12px;
+            margin: 10px;
+            margin-top: 50px;
+            background: #1e2167;
+            color: white;
+            border: 2px solid white;
+            border-radius: 6px;
+            font-size: 20px;
+            cursor: pointer;
+
+        }
+
+        /* .secondsection {
+            max-width: 80vw;
+            margin: auto
+        }
+
+        main hr {
+            border: 0;
+            background: rgb(209, 116, 209);
+            height: 1.2px;
+            margin: 50px;
+        }
+
+        .secondsection h1 {
+            font-size: 1.9rem;
+            height: 80vh;
+        }
+        .secondsection .vertical{
+            height: 93px;
+            width: 1px;
+            background: white;
+            display: flex;
+            margin: 0 100px;
+        }
+
+        .secondsection .box {
+            background: white;
+            width: 80vw;
+            height: 2px;
+            margin: -400px 0;
+            display: flex;
+        } */
+ 
+   @media (max-width: 768px) {
+       body {
+           font-size: 14px;
+           text-align: center;
+       }
+       .rightsection img {
+           max-width: 80%;
+           height: auto;
+       }
+       .firstsection {
+           flex-direction: column;
+           align-items: center;
+       }
+       .buttons {
+           flex-direction: column;
+           width: 100%;
+       }
+   }
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">pranali's portfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a href="/portfolio/Home.html">Home</a></li>
+                    <li><a href="/portfolio/About.html">About</a></li>
+                    <li><a href="/portfolio/Services.html">Services</a></li>
+                    <li><a href="/portfolio/Projects.html">Projects</a></li>
+                    <li><a href="/portfolio/Contact Me.html">Contact Me</a></li>
+
+
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="firstsection">
+            <div class="leftsection">
+                Hi, My name is <span class="purple"> <b>PRANALI</b></span>
+                <div>and I am a passionate</div>
+                <span id="element"></span>
+
+                <div class="buttons">
+                    <button class="btn">
+                        <a href="resume.pdf" download style="text-decoration: none; color: inherit;">Download Resume</a>
+                    </button>
+
+                    <button class="btn" type="button"
+                        onclick="window.open('https://github.com/pranalichakor', '_blank')">
+                        Visit Github
+                    </button>
+                </div>
+
+            </div>
+            <div class="rightsection">
+                <img src="nep-removebg.png" alt="">
+            </div>
+        </section>
+
+        <!-- <section class="secondsection">
+         <span class="text-gray">what i have done so far</span>
+         <h1>Work Experience</h1>
+         <div class="box">
+          <div class="vertical"></div>
+          <div class="vertical"></div>
+          <div class="vertical"></div>
+          <div class="vertical"></div>
+         </div>
+     </section> -->
+    </main>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <!-- Setup and start animation! -->
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Web Developer', 'Graphic Designer', 'Web Designer'],
+            typeSpeed: 50,
+        });
+    </script>
+
+</body>
+
+</html>

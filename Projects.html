@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pranali - Developer Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/common.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #0a0e20;
+            color: white;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        header {
+            background-color: #181d2b;
+            padding: 20px 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 1.1rem;
+            transition: color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            color: #8a4df9;
+        }
+
+        .projects {
+            text-align: center;
+            padding: 50px 0;
+            
+        }
+
+        .projects h2 {
+            font-size: 3rem;
+            color: #73c5c2;
+            margin-bottom: 40px;
+            text-shadow: 0px 4px 10px rgba(106, 161, 175, 0.918);
+            
+        }
+        .projects h2:hover {
+            transform: translateY(-10px);
+            text-shadow: 7px 15px 25px rgba(253, 255, 255, 0.5);
+        }
+
+        .project-card {
+            background-color: #212d40;
+            margin: 20px auto;
+            padding: 30px;
+            border-radius: 15px;
+            width: 80%;
+            max-width: 1000px;
+            box-shadow: 0px 4px 10px rgba(106, 161, 175, 0.918);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            background: radial-gradient(circle at center, rgba(78, 96, 131, 0.8), rgba(69, 59, 116, 0.5));
+
+        }
+
+        .project-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 7px 15px 25px rgba(253, 255, 255, 0.5);
+        }
+
+        .project-header h3 {
+            font-size: 2.3rem;
+            color: #5aaaaa;
+            margin-bottom: 10px;
+            transition: color 0.3s ease;
+        }
+
+        .project-header h3:hover {
+            color: #f1bc2b;
+        }
+
+        .project-description {
+            font-size: 1.1rem;
+            color: #f3b93be5;
+            margin-bottom: 20px;
+        }
+
+        .project-technologies p {
+            font-size: 1.2rem;
+            color: #fff;
+            margin-bottom: 10px;
+        }
+
+        .tech-icons img {
+            width: 50px;
+            height: 50px;
+            margin: 10px;
+            transition: transform 0.3s ease;
+        }
+
+        .tech-icons img:hover {
+            transform: scale(1.2);
+        }
+
+        .project-impact {
+            font-size: 1rem;
+            color: #15c515;
+            margin-top: 20px;
+        }
+
+        .project-impact:hover {
+            color: #fff;
+        }
+
+        .project-details {
+            color: #76e4de;
+            font-size: 1.1rem;
+            margin-top: 20px;
+        }
+
+        .project-details p {
+            margin: 10px 0;
+        }
+
+        @media (max-width: 768px) {
+            .projects h2 {
+                font-size: 2rem;
+            }
+
+            .project-card {
+                width: 90%;
+            }
+        }
+        .
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <div class="left">Pranali's Portfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a href="/portfolio/Home.html">Home</a></li>
+                    <li><a href="/portfolio/About.html">About</a></li>
+                    <li><a href="/portfolio/Services.html">Services</a></li>
+                    <li><a href="/portfolio/Projects.html">Projects</a></li>
+                    <li><a href="/portfolio/Contact Me.html">Contact Me</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="projects">
+            <h2>My Projects</h2>
+
+            <!-- Real-Time Code Editor -->
+            <div class="project-card">
+                <div class="project-header">
+                    <h3>Real-Time Code Editor</h3>
+                    <p class="project-description">A real-time collaborative code editor that allows multiple users to write, edit, and debug code together in real-time, enabling seamless teamwork across different locations.</p>
+                </div>
+                <div class="project-technologies">
+                    <p>Technologies Used:</p>
+                    <div class="tech-icons">
+                        <img src="html.jpeg" alt="HTML">
+                        <img src="css.jpeg" alt="CSS">
+                        <img src="js.jpeg" alt="JavaScript">
+                        <img src="react.jpeg" alt="React">
+                        <img src="nodejs.jpeg" alt="Node.js">
+                    </div>
+                </div>
+                <div class="project-details">
+                    <p><strong>How it works:</strong> Users can create an account, start a new project, and invite others to collaborate on coding tasks. The real-time code sync ensures that all team members are always up to date. Integrated chat functionality allows for communication during development.</p>
+                </div>
+                <p class="project-impact">This project enhances collaborative coding by enabling real-time interactions, improving communication between developers, and optimizing productivity in coding teams.</p>
+            </div>
+
+            <!-- Personal Finance Tracker -->
+            <div class="project-card">
+                <div class="project-header">
+                    <h3>Personal Finance Tracker</h3>
+                    <p class="project-description">A web application that helps users manage their finances by tracking expenses, creating budgets, and visualizing spending patterns with graphs.</p>
+                </div>
+                <div class="project-technologies">
+                    <p>Technologies Used:</p>
+                    <div class="tech-icons">
+                        <img src="html.jpeg" alt="HTML">
+                        <img src="css.jpeg" alt="CSS">
+                        <img src="js.jpeg" alt="JavaScript">
+                        <img src="nodejs.jpeg" alt="Node.js">
+                        <img src="react.jpeg" alt="React">
+                        <img src="mongodb.jpeg" alt="MongoDB">
+                    </div>
+                </div>
+                <div class="project-details">
+                    <p><strong>How it works:</strong> Users input their income and expenses, categorize spending, and set budget goals. The app automatically generates visual reports, highlighting where money is being spent, and offers suggestions for savings.</p>
+                </div>
+                <p class="project-impact">This project helps users maintain financial discipline by monitoring their expenses, generating detailed reports, and assisting in achieving savings goals.</p>
+            </div>
+
+            <!-- Job Search Portal -->
+            <div class="project-card">
+                <div class="project-header">
+                    <h3>Job Search Portal</h3>
+                    <p class="project-description">A job portal that connects job seekers and employers, providing features for job posting, job search, application tracking, and more.</p>
+                </div>
+                <div class="project-technologies">
+                    <p>Technologies Used:</p>
+                    <div class="tech-icons">
+                        <img src="html.jpeg" alt="HTML">
+                        <img src="css.jpeg" alt="CSS">
+                        <img src="js.jpeg" alt="JavaScript">
+                        <img src="nodejs.jpeg" alt="Node.js">
+                        <img src="react.jpeg" alt="React">
+                        <img src="mongodb.jpeg" alt="MongoDB">
+                    </div>
+                </div>
+                <div class="project-details">
+                    <p><strong>How it works:</strong> Employers can post job openings, and candidates can filter and apply for jobs. The platform includes user profiles, application status tracking, and a direct messaging system between employers and applicants.</p>
+                </div>
+                <p class="project-impact">This project provides a streamlined experience for job seekers to find opportunities and employers to easily recruit the right candidates, improving the job market efficiency.</p>
+            </div>
+
+        </section>
+    </main>
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Web Developer', 'Graphic Designer', 'Web Designer'],
+            typeSpeed: 50,
+        });
+    </script>
+
+</body>
+
+</html>
